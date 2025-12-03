@@ -28,15 +28,14 @@ function Login() {
   };
 
   return (
-    <div style={{ padding: 20, maxWidth: 300, margin: "0 auto" }}>
-      <h2>로그인</h2>
-
+    <div style={{ padding: 20, maxWidth: 300, margin: "0 auto", textAlign: "center"}}>
+      <h2 style={{textAlign:"center"}}> Login</h2>
       <input
         type="text"
         placeholder="이메일 입력"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        style={{ width: "100%", marginBottom: 10, padding: 8 }}
+        style={{ width: "92%", marginBottom: 10, padding: 8 }}
       />
 
       <input
@@ -44,12 +43,12 @@ function Login() {
         placeholder="비밀번호 입력"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        style={{ width: "100%", marginBottom: 10, padding: 8 }}
+        style={{ width: "92%", marginBottom: 10, padding: 8 }}
       />
 
       <button
         onClick={onLogin}
-        style={{ width: "100%", padding: 10, background: "black", color: "white" }}
+        style={{ width: "99%", padding: 10, background: "black", color: "white" }}
       >
         로그인
       </button>

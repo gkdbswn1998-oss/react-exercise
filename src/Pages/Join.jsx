@@ -20,7 +20,8 @@ function Join() {
         email: id,
         password: password
       });
-      alert("서버 응답:", response.data);
+      console.log("서버 응답:", response);
+      alert("서버 응답:" + response.data);
     } catch (error) {
       alert("에러발생");
     }

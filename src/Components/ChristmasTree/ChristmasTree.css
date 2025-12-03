@@ -1,0 +1,38 @@
+.tree-small {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 12vmin;
+  height: 25vmin;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
+
+.light {
+  position: absolute;
+  width: 0.6vmin;
+  height: 0.6vmin;
+  border-radius: 50%;
+  background: var(--color);
+  bottom: calc(var(--y) * 1%);
+  left: 50%;
+  transform: translateX(-50%)
+    rotateY(calc(var(--rotate) * 1deg))
+    translateZ(calc(var(--depth) * 1px));
+  box-shadow: 0 0 6px currentColor;
+}
+
+.star {
+  position: absolute;
+  top: -2vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2vmin;
+  color: gold;
+  text-shadow: 0 0 6px gold;
+}
