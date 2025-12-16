@@ -16,6 +16,7 @@ function Login() {
 
       // 토큰 저장 (로컬스토리지)
       localStorage.setItem("accessToken", token);
+      localStorage.setItem("emailKey", email);
 
       alert("로그인 성공!");
       // 이동하고 싶으면 아래 활성화:
@@ -28,8 +29,8 @@ function Login() {
   };
 
   return (
-    <div style={{ padding: 20, maxWidth: 300, margin: "0 auto", textAlign: "center"}}>
-      <h2 style={{textAlign:"center"}}> Login</h2>
+    <div style={{ padding: 20, maxWidth: 300, margin: "0 auto", textAlign: "center" }}>
+      <h2 style={{ textAlign: "center" }}> Login</h2>
       <input
         type="text"
         placeholder="이메일 입력"

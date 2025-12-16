@@ -6,6 +6,7 @@ import MemoCreate from "./Pages/MemoCreate";
 import ExerciseWrite from "./Pages/ExerciseWrite";
 import Mypage from "./Pages/Mypages/Mypage";
 import MypageExercise from "./Pages/Mypages/MypageExercise";
+import MypageBody from "./Pages/Mypages/MypageBody";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/exerciseWrite" element={<ExerciseWrite />} />
           <Route path="/mypage" element={<Mypage />} />
           <Route path="/mypageExercise" element={<MypageExercise />} />
+          <Route path="/mypageBody" element={<MypageBody />} />
           <Route path="/memocreate" element={<MemoCreate />} />
         </Routes>
       </BrowserRouter>

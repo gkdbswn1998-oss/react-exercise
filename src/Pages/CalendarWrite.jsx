@@ -4,7 +4,6 @@ import style from "../Style/CalendarWrite.css";
 import { Link, useNavigate } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ExerciseWrite from "./ExerciseWrite";
-import ChristmasTree from "../Components/ChristmasTree/ChristmasTree";
 
 const cx = classNames.bind(style);
 
@@ -197,9 +196,9 @@ const CalendarWrite = () => {
         <div className="dateButton">{selectedDate.year}.{selectedDate.month}.{selectedDate.date}
           <button onClick={() => handleClick(selectedDate)}>오늘의 운동 기록하기</button>
         </div>
-        <div style={{ position: "absolute", bottom: "-30px", right: "100px" }}>
+        {/* <div style={{ position: "absolute", bottom: "-30px", right: "100px" }}>
           <ChristmasTree />
-        </div>
+        </div> */}
       </div>
     </div>
 
